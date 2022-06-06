@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>笔记 on USASZHJCH - a former USAS user</title>
+    <link>http://usaszhjch.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 笔记 on USASZHJCH - a former USAS user</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Mar 2020 23:36:07 +0800</lastBuildDate><atom:link href="http://usaszhjch.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何做笔记</title>
+      <link>http://usaszhjch.github.io/post/20200301howtomakenotes/</link>
+      <pubDate>Sun, 01 Mar 2020 23:36:07 +0800</pubDate>
+      
+      <guid>http://usaszhjch.github.io/post/20200301howtomakenotes/</guid>
+      <description>很多同学在课堂听讲的时候，都会把老师的板书照抄下来，或者完全复制PPT上的内容，这样一节课下来笔记记得密密麻麻的，觉得很自我感动。但是其实不</description>
+    </item>
+    
+  </channel>
+</rss>

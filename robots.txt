@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://usaszhjch.github.io/sitemap.xml

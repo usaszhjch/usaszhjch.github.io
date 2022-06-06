@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>USASZHJCH - a former USAS user</title>
+    <link>http://usaszhjch.github.io/</link>
+    <description>Recent content on USASZHJCH - a former USAS user</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Mar 2020 23:36:07 +0800</lastBuildDate><atom:link href="http://usaszhjch.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何做笔记</title>
+      <link>http://usaszhjch.github.io/post/20200301howtomakenotes/</link>
+      <pubDate>Sun, 01 Mar 2020 23:36:07 +0800</pubDate>
+      
+      <guid>http://usaszhjch.github.io/post/20200301howtomakenotes/</guid>
+      <description>很多同学在课堂听讲的时候，都会把老师的板书照抄下来，或者完全复制PPT上的内容，这样一节课下来笔记记得密密麻麻的，觉得很自我感动。但是其实不</description>
+    </item>
+    
+    <item>
+      <title>Hugo入门学习</title>
+      <link>http://usaszhjch.github.io/post/20190702hugopreparation/</link>
+      <pubDate>Tue, 02 Jul 2019 10:03:45 +0800</pubDate>
+      
+      <guid>http://usaszhjch.github.io/post/20190702hugopreparation/</guid>
+      <description>1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex</description>
+    </item>
+    
+  </channel>
+</rss>

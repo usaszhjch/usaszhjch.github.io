@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on USASZHJCH - a former USAS user</title>
+    <link>http://usaszhjch.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on USASZHJCH - a former USAS user</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Jul 2019 10:03:45 +0800</lastBuildDate><atom:link href="http://usaszhjch.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo入门学习</title>
+      <link>http://usaszhjch.github.io/post/20190702hugopreparation/</link>
+      <pubDate>Tue, 02 Jul 2019 10:03:45 +0800</pubDate>
+      
+      <guid>http://usaszhjch.github.io/post/20190702hugopreparation/</guid>
+      <description>1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex</description>
+    </item>
+    
+  </channel>
+</rss>
