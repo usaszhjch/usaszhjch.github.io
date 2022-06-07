@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Hugo入门学习">
 <meta itemprop="description" content="1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex"><meta itemprop="datePublished" content="2019-07-02T10:03:45+08:00" />
 <meta itemprop="dateModified" content="2019-07-02T10:03:45+08:00" />
-<meta itemprop="wordCount" content="2309">
+<meta itemprop="wordCount" content="2382">
 <meta itemprop="keywords" content="Hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo入门学习"/>
 <meta name="twitter:description" content="1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex"/>
@@ -777,6 +777,18 @@
 </span></span><span class="line"><span class="cl">git branch -M main
 </span></span><span class="line"><span class="cl">git remote add origin https://github.com/xxx/xxx.github.io.git
 </span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="11">
+<li>问题：使用git请求更新代码，拉取分支时，报错：HTTP/2 stream 1 was not closed cleanly before end of the underlying stream</li>
+</ol>
+<p>解决方法：提示默认通信协议出错，更改默认通信协议：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global http.version HTTP/1.1
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
