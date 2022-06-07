@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Hugo入门学习">
 <meta itemprop="description" content="1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex"><meta itemprop="datePublished" content="2019-07-02T10:03:45+08:00" />
 <meta itemprop="dateModified" content="2019-07-02T10:03:45+08:00" />
-<meta itemprop="wordCount" content="1723">
+<meta itemprop="wordCount" content="2268">
 <meta itemprop="keywords" content="Hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo入门学习"/>
 <meta name="twitter:description" content="1. 下载程序 下载地址hugo。 1 2 $ hugo version Hugo Static Site Generator v0.80.0/extended windows/amd64 BuildDate: unknown Tips：创建好站点以后把hugo.exe放在新站点下面（例如：G:\HugoP\Ex"/>
@@ -159,6 +159,7 @@
           </ul>
         </li>
         <li><a href="#8-常用链接">8. 常用链接</a></li>
+        <li><a href="#9-github-更新">9. GitHub 更新</a></li>
       </ul>
     </li>
   </ul>
@@ -547,7 +548,215 @@
 <p><a href="https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Windows-64bit.zip">hugo_extended_0.80.0_Windows-64bit</a></p>
 <p><a href="https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Windows-32bit.zip">hugo_0.80.0_Windows-32bit</a></p>
 <p><a href="https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Windows-64bit.zip">hugo_0.80.0_Windows-64bit</a></p>
-
+<h2 id="9-github-更新">9. GitHub 更新</h2>
+<ol>
+<li>查看用户名，邮箱</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config user.name
+</span></span><span class="line"><span class="cl">git config user.email
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>修改，用户名，邮箱</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;xxx&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email &#34;xxx&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>移除仓库，重新添加</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote rm origin
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/XXX
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>解除SSL认证</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global http.sslVerify &#34;false&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>更新 DNS 缓存</li>
+</ol>
+<p>cmd 窗口输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ipconfig /flushdns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>文件过大，超过上限</li>
+</ol>
+<p>修改为 500MB，在 Git Bash 中输入以下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config http.postBuffer 5242880003
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="7">
+<li>如果提示Filename too long，说明文件名或路径太长</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global core.longpaths true
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="8">
+<li>完美解决remote: Support for password authentication was removed on August 13, 2021.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// &lt;your_token&gt;：包括&lt;&gt;在内的全部字符替换成你的token
+</span></span><span class="line"><span class="cl">// &lt;USERNAME&gt;：包括&lt;&gt;在内的全部字符替换成你的username
+</span></span><span class="line"><span class="cl">// &lt;REPO&gt;：包括&lt;&gt;在内的全部字符替换成你要访问的仓库名称
+</span></span><span class="line"><span class="cl">git remote set-url origin  https://&lt;your_token&gt;@github.com/&lt;USERNAME&gt;/&lt;REPO&gt;.git
+</span></span><span class="line"><span class="cl">git push origin main
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="9">
+<li>DNS</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">获取GitHub官方CDN地址，通过https://www.ipaddress.com输入域名获得IP
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">github.com
+</span></span><span class="line"><span class="cl">assets-cdn.github.com
+</span></span><span class="line"><span class="cl">github.global.ssl.fastly.net
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">根据查询到的IP，更新本地的NDS解析文件。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">140.82.112.3 github.com
+</span></span><span class="line"><span class="cl">199.232.69.194 github.global.ssl.fastly.net
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">配置 dns
+</span></span><span class="line"><span class="cl">151.101.185.194 github.global.ssl.fastly.net
+</span></span><span class="line"><span class="cl">151.101.185.194 github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 assets-cdn.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 assets-cdn.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 documentcloud.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 gist.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 help.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 nodeload.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 raw.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 status.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 training.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 www.github.com
+</span></span><span class="line"><span class="cl">151.101.185.194 github.global.ssl.fastly.net
+</span></span><span class="line"><span class="cl">151.101.185.194 avatars0.githubusercontent.com
+</span></span><span class="line"><span class="cl">151.101.185.194 avatars1.githubusercontent.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 屏蔽Adobe激活服务器：
+</span></span><span class="line"><span class="cl">#0.0.0.0 activate.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 practivate.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 ereg.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 activate.wip3.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 wip3.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 3dns-3.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 3dns-2.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 adobe-dns.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 adobe-dns-2.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 adobe-dns-3.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 ereg.wip3.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 activate-sea.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 wwis-dubc1-vip60.adobe.com
+</span></span><span class="line"><span class="cl">#0.0.0.0 activate-sjc0.adobe.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">刷新本地DNS解析的缓存
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ipconfig /flushdns
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
